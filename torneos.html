@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneos</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./estilos/torneosStyle.css">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/1c7ea47b2b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Cabecera Barra de navegación-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./imagenes/Logo Arena 2.png" alt="Logo" width="66" height="80"
+                    class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./torneos.html">Torneos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- CARRUSEL -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./imagenes/street fighter.jpg" class="d-block w-100 imagen" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <strong>
+                        <h5>Torneo Street Fighter</h5>
+                        <p>inicia 18/09/2023.</p>
+                    </strong>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/valorant.webp" class="d-block w-100 imagen" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Torneo Valoran</h5>
+                    <p>Inicia 25/09/2023</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/age-empires-rome.webp" class="d-block w-100 imagen" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Torneo Age Empires Rome</h5>
+                    <p>Inicia 2/09/2023</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- SECCION 1 Cards-->
+    <section class="Section1">
+
+        <div>
+            <div>
+              <h3>TORNEOS POPULARES</h3>
+              <p class="p1">En esta sección encontrarás nuestro top five </p>
+            </div>
+          </div>
+          
+        <div class="container py-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+                <div class="col">
+                    <div class="card">
+                        <img src="./imagenes/castlevania.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Torneo Castlevania</h5>
+                            <p class="card-text"> Cada cien años, Drácula resucita y es la labor del clan Belmont derrotarlo antes de que cause mucho dolor y sufrimiento</p>   
+                        </div>
+                        <div class="d-flex justify-content-around mb-5">
+                            <h4>Popular</h4>
+                            <button class="btn btn-primary"> ver mas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="./imagenes/call of duty.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Torneo Call Of Duty</h5>
+                            <p class="card-text"> Redefine la Segunda Guerra Mundial para una nueva generación. </p>   
+                        </div>
+                        <div class="d-flex justify-content-around mb-5">
+                            <h4>Popular</h4>
+                            <button class="btn btn-primary"> ver mas</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./imagenes/League of legends.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Torneo League Of Legends</h5>
+                            <p class="card-text"> Equipos en el que dos equipos de cinco campeones se enfrentan para ver quién destruye antes la base del otro.</p>   
+                        </div>
+                        <div class="d-flex justify-content-around mb-5">
+                            <h4>Popular</h4>
+                            <button class="btn btn-primary"> ver mas</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./imagenes/Fortnite.webp "class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Torneo fortnite</h5>
+                            <p class="card-text"> batalla real en el que compiten hasta cien jugadores en solitario, dúos, tríos o escuadrones.</p>   
+                        </div>
+                        <div class="d-flex justify-content-around mb-5">
+                            <h4>Popular</h4>
+                            <button class="btn btn-primary"> ver mas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="./imagenes/minecraft.jpg"class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Torneo Minecraft</h5>
+                            <p class="card-text"> Los jugadores pueden modelar el mundo a su gusto, destruir y construir, como si estuviesen jugando en una caja de arena </p>   
+                        </div>
+                        <div class="d-flex justify-content-around mb-5">
+                            <h4>Popular</h4>
+                            <button class="btn btn-primary"> ver mas</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./imagenes/Diablo 2.jpg"class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"> Torneo Diablo II</h5>
+                            <p class="card-text"> Diablo, el señor del terror, fue derrotado debajo de la iglesia de Tristram por un valeroso héroe.</p>   
+                        </div>
+                        <div class="d-flex justify-content-around mb-5">
+                            <h4>Popular</h4>
+                            <button class="btn btn-primary"> ver mas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION 2 TORNEO DE LA SEMANA -->
+<section class="Section2">
+    <div>
+        <div>
+          <h3>TORNEO DE LA SEMANA</h3>
+        </div>
+      </div>
+      <iframe class="video ratio ratio-4x3" width="640" height="360" src="https://www.youtube.com/embed/4_qsyCP-2P0" title="#MSI2023: Gran Final | Día 12 | Esports | League of Legends" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</section>
+
+    <!-- SECCION 3 FORMULARIO DE REGISTRO -->
+
+<section>
+    <div class="form">
+        <div class="form-content">
+            <h1 id="title">Registrate</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameInput">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Nombre">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Correo">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Contraseña">
+                    </div>
+                    <p>Olvidaste tu contraseña <a href="#">Click aqui</a></p>
+
+                </div>
+                <div class="btn-field">
+                    <button id="signUp" type="button"> Registro</button>
+                    <button id="signIn" type="button" class="disable">Login</button>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+    <!-- footer -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#"></a>
+                    <img src="./imagenes/Logo Arena 2.png" alt="Logo arena">
+                </figure>
+            </div>
+
+            <div class="box">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos una plataforma que organiza torneos y eventos relacionados con el mundo gamer</p>
+            </div>
+
+            <div class="box">
+                <h2> Siguenos</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy;2023 <b>Arena Gaming Pro</b> Todos los derechos reservados</small>
+        </div>
+
+    </footer>
+
+
+<!-- Javascript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

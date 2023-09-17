@@ -1,0 +1,267 @@
+@media screen and (max-width: 831px){
+.Responsive{
+    width: 100%;
+}
+
+.section1{
+    width: 100%;
+}
+.section2{
+    width: 100%;
+}
+
+.section3{
+    width: 100%;
+}
+
+}
+
+
+body {
+    background: #111218;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1050px;
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+.navbar {
+    background: #2B2D34 !important;
+}
+
+.navbar a{
+    color: aliceblue;
+
+}
+
+/* Carrusel */
+.imagen{
+ opacity: .9;
+}
+
+.carousel-caption{
+    background-color: #36373d;
+    opacity: .7;
+    width: 700px;
+    align-items: center;
+}
+
+
+/* SECTION 1 */
+.section1 {
+
+    align-items: center;
+    background-color: #14161D;
+}
+
+.section1 h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    padding: 30px;
+    color: #889BAA;
+    
+
+}
+
+.section1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -25px;
+}
+
+.torneos {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+th {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #889BAA;
+}
+
+h6{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:5px;
+}
+
+.boton1{
+    background-color: #840E86;
+    color: aliceblue;
+}
+
+/* Section 2 */
+
+.section2 {
+    background-color: #14161D;
+}
+
+.section2 h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    padding: 30px;
+    color: #889BAA;
+}
+
+.video {
+    width: 55%;
+    padding: 15px;
+}
+
+.texto {
+    width: 30%;
+    padding: 8px;
+}
+
+article {
+    padding: 35px;
+    background-color: #2A2C33;
+}
+
+article h2 {
+    border-bottom: 1px solid black;
+}
+
+.texto,.video {
+    display: inline-block;
+}
+
+.boton {
+    text-align: center;
+    background-color: #840E86;
+    padding: 15px;
+    
+}
+
+.boton a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* section 3 */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .accordion-item h6{
+    color: aliceblue;
+    font-family:'Poppins', sans-serif;
+}
+.accordion {
+    width: 80%;
+    background: transparent;
+
+}
+
+.accordion-item {
+    background: #840E86;
+    border: none;
+    box-shadow: 2px 2px 8px #0f000f, -2px -2px 8px #0f000f;
+
+}
+
+.accordion-button {
+    font-size: 0.9rem;
+    background: transparent;
+    border: 1px solid #0f000f;
+    font-weight: 500;
+}
+
+.accordion-body {
+    font-size: 0.9rem;
+    background: #2A2C33;
+    color:aliceblue;
+    font-family:'Poppins', sans-serif;
+    
+
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border: 1px solid #0f000f;
+
+}
+
+.accordion-button:not(.collapsed){
+    background:#840E86;
+    color: aliceblue;
+}
+
+
+/* Footer */
+
+.pie-pagina {
+    width: 100%;
+    height: 60%;
+    background-color: #2B2D34;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 30px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}  
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 120px;
+
+}
+
+.pie-pagina .grupo-1 .box h2{
+    font-size: 23px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    font-size: 13px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    margin-right: 10px;
+    background-color: #840E86;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+
+    color: #ff7300;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #840E86;
+    padding: 15px 10px;
+    text-align: center;
+    color:aliceblue;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    
+}

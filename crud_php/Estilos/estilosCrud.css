@@ -1,0 +1,229 @@
+
+
+.navbar {
+    background: #2B2D34 !important;
+}
+
+.navbar a{
+    color: aliceblue;
+
+}
+
+body {
+    background: #111218;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1050px;
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+.form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.form .content {
+    width: 100%;
+    max-width: 400px;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #2B2D34; 
+}
+
+.input-field {
+    background-color: #585b66;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s; 
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 10px 15px;
+    color: aliceblue; 
+}
+
+input::placeholder {
+    color: aliceblue;
+}
+
+.input-field i {
+    margin-left: 10px;
+    color: #840E86;
+}
+
+form p {
+    color: aliceblue;
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    color: aliceblue;
+    margin-left: 5px;
+}
+
+.btn-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color:#840E86 ;
+    color: aliceblue;
+    height: 40px;
+    border-radius:10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+
+}.form label {
+    text-align: left;
+    display: inline-block;
+    width: 90%; 
+    padding-right: 10px; 
+}
+
+
+/* Estilo para la tabla */
+.table {
+    background-color: #585b66;
+    color: aliceblue;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Estilo para las celdas de encabezado de la tabla */
+.table thead th {
+    background-color: #840E86; /* Color de fondo del encabezado */
+    color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo para las filas impares de la tabla */
+.table tbody tr:nth-child(odd) {
+    background-color: #2B2D34; /* Color de fondo de las filas impares */
+}
+
+/* Estilo para las celdas de datos en la tabla */
+.table tbody td {
+    text-align: center;
+    background-color: #2B2D34;
+    color: aliceblue;
+}
+
+/* Estilo para los botones de acción en las celdas */
+.table tbody .btn {
+    margin: 2px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Estilo para los íconos en los botones */
+.table tbody .btn i {
+    color: aliceblue;
+}
+
+/* Estilo para los enlaces */
+.table tbody a {
+    text-decoration: none;
+}
+
+/* Cambio de cursor al pasar el mouse sobre los botones */
+.table tbody .btn:hover {
+    cursor: pointer;
+}
+
+
+
+/* Footer */
+
+.pie-pagina {
+    width: 100%;
+    height: 60%;
+    background-color: #2B2D34;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 30px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}  
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 120px;
+
+}
+
+.pie-pagina .grupo-1 .box h2{
+    font-size: 23px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    font-size: 13px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    margin-right: 10px;
+    background-color: #840E86;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+
+    color: #ff7300;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #840E86;
+    padding: 15px 10px;
+    text-align: center;
+    color:aliceblue;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    
+}

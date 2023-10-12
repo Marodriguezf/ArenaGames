@@ -27,16 +27,10 @@
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Registro de Jugadores</a>
+                        <a class="nav-link" href="./torneos.html">Torneos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="jugadores.php">Jugadores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Registrar Torneo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Torneos</a>
+                        <a class="nav-link" href="./crud_php/index.php">Registrate</a>
                     </li>
                 </ul>
             </div>
@@ -59,7 +53,7 @@
     <div class="form">
         <?php if ($mostrarFormulario) { ?>
             <form class="content col-4 p-3 m-auto" method="POST">
-            <h1 id="title">Registrate</h1>
+                <h1 id="title">Registrate</h1>
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>
                     <input type="text" class="form-control" name="nombre">
@@ -81,41 +75,41 @@
                     <input type="email" class="form-control" name="correo">
                 </div>
 
-                <div class="btn-field"> 
-                <button type="submit" class="btn btn-primary" name="btnregistrar" value="ok">Registrar</button>
+                <div class="btn-field">
+                    <button type="submit" class="btn btn-primary" name="btnregistrar" value="ok">Registrar</button>
                 </div>
             </form>
         <?php } ?>
     </div>
 
-        <!-- footer -->
-        <footer class="pie-pagina">
-      <div class="grupo-1">
-        <div class="box">
-          <figure>
-            <a href="#"></a>
-            <img src="./imagenes/Logo Arena 2.png" alt="Logo arena">
-          </figure>
-        </div>
+    <!-- footer -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#"></a>
+                    <img src="./imagenes/Logo Arena 2.png" alt="Logo arena">
+                </figure>
+            </div>
 
-        <div class="box">
-          <h2>Sobre Nosotros</h2>
-          <p>Somos una plataforma que organiza torneos y eventos relacionados con el mundo gamer</p>
-        </div>
+            <div class="box">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos una plataforma que organiza torneos y eventos relacionados con el mundo gamer</p>
+            </div>
 
-        <div class="box">
-          <h2> Siguenos</h2>
-          <div class="red-social">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-whatsapp"></a>
-          </div>
+            <div class="box">
+                <h2> Siguenos</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
 
+            </div>
         </div>
-      </div>
-      <div class="grupo-2">
-        <small>&copy;2023 <b>Arena Gaming Pro</b> Todos los derechos reservados</small>
-      
+        <div class="grupo-2">
+            <small>&copy;2023 <b>Arena Gaming Pro</b> Todos los derechos reservados</small>
+
 
     </footer>
     <!-- JavaScript -->

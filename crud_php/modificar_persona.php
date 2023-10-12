@@ -47,16 +47,10 @@ if (isset($_GET["id"])) {
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Registro de Jugadores</a>
+                        <a class="nav-link" href="./torneos.html">Torneos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="jugadores.php">Jugadores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Registrar Torneo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Torneos</a>
+                        <a class="nav-link" href="./crud_php/index.php">Registrate</a>
                     </li>
                 </ul>
             </div>
@@ -65,7 +59,7 @@ if (isset($_GET["id"])) {
 
     <div class="form">
         <form class="content col-4 p-3 m-auto" method="POST">
-            <h3 class="text-center text-secondary">Modificar perfil</h3>
+            <h3 class="text-center text-secondary">Perfil de usuario</h3>
             <input type="hidden" name="id" value="<?= $_GET["id"] ?>">
             <?php
             include "controlador/Modificar_Persona.php";

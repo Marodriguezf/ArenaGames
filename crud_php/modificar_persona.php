@@ -47,10 +47,13 @@ if (isset($_GET["id"])) {
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./torneos.html">Torneos</a>
+                        <a class="nav-link" href="../torneos.html">Torneos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./crud_php/index.php">Registrate</a>
+                        <a class="nav-link" href="../crud_php/index.php">Registrate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jugadores.php">Jugadores</a>
                     </li>
                 </ul>
             </div>
@@ -65,25 +68,22 @@ if (isset($_GET["id"])) {
             include "controlador/Modificar_Persona.php";
             if ($sql && $datos = $sql->fetch_object()) { ?>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" name="nombre" value="<?= $datos->nombre ?>">
+                <label for="usuario" class="form-label">Usuario</label>
+                <input type="text" class="form-control" name="usuario" value="<?= $datos->usuario ?>">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" name="apellido" value="<?= $datos->apellido ?>">
+                <label for="correo" class="form-label">Correo</label>
+                <input type="email" class="form-control" name="correo" value="<?= $datos->correo ?>">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Cedula</label>
-                    <input type="text" class="form-control" name="cedula" value="<?= $datos->cedula ?>">
+                <label for="password" class="form-label">password</label>
+                    <input type="text" class="form-control" name="password" value="<?= $datos->password ?>">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label>
-                    <input type="date" class="form-control" name="fecha" value="<?= $datos->fecha_nac ?>">
+                <label for="avatar" class="form-label">avatar</label>
+                    <input type="file" class="form-control" name="avatar" value="<?= $datos->avatar ?>">
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Correo</label>
-                    <input type="email" class="form-control" name="correo" value="<?= $datos->correo ?>">
-                </div>
+
             <?php } else {
                 echo "No se encontraron datos para modificar.";
             }

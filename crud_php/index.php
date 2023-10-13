@@ -27,15 +27,19 @@
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./torneos.html">Torneos</a>
+                        <a class="nav-link" href="../torneos.html">Torneos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./crud_php/index.php">Registrate</a>
+                        <a class="nav-link" href="../crud_php/index.php">Registrate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jugadores.php">Jugadores</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
     <h1 class="text-center p-3">Registro de Jugadores</h1>
     <?php
     include "modelo/conexion.php";
@@ -55,26 +59,21 @@
             <form class="content col-4 p-3 m-auto" method="POST">
                 <h1 id="title">Registrate</h1>
                 <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" name="nombre">
-                </div>
-                <div class="mb-3">
-                    <label for="apellido" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" name="apellido">
-                </div>
-                <div class="mb-3">
-                    <label for="cedula" class="form-label">Cédula</label>
-                    <input type="text" class="form-control" name="cedula">
-                </div>
-                <div class="mb-3">
-                    <label for="fecha" class="form-label">Fecha de Nacimiento</label>
-                    <input type="date" class="form-control" name="fecha">
+                    <label for="usuario" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" name="usuario">
                 </div>
                 <div class="mb-3">
                     <label for="correo" class="form-label">Correo</label>
                     <input type="email" class="form-control" name="correo">
                 </div>
-
+                <div class="mb-3">
+                    <label for="password" class="form-label">password</label>
+                    <input type="text" class="form-control" name="password">
+                </div>
+                <div class="mb-3">
+                    <label for="avatar" class="form-label">avatar</label>
+                    <input type="file" class="form-control" name="avatar" accept="image/jpg, image/jpeg, image/png, image/webp">
+                </div>
                 <div class="btn-field">
                     <button type="submit" class="btn btn-primary" name="btnregistrar" value="ok">Registrar</button>
                 </div>

@@ -1,12 +1,19 @@
 <?php
 if (!empty($_GET["id"])) {
-    $id = $_GET["id"];
-    $sql = $conexion->query("DELETE FROM persona WHERE id_persona=$id");
+    // Obtén el ID de forma segura
+    $id = intval($_GET["id"]);
 
-    if ($sql == 1) {
+    // Prepara la consulta SQL para eliminar la persona
+    $sql = $conexion->prepare("DELETE FROM persona WHERE id_persona = ?");
+    $sql->bind_param("i", $id);
+
+    if ($sql->execute()) {
         echo '<div class="alert alert-success">Persona eliminada correctamente</div>';
     } else {
-        echo '<div class="alert alert-danger">Error al eliminar persona</div>';
+        echo '<div class="alert alert-danger">Error al eliminar persona: ' . $conexion->error . '</div>';
     }
+} else {
+    echo '<div class="alert alert-warning">ID de persona no proporcionado</div>';
 }
+
 ?>

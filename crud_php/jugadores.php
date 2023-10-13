@@ -26,7 +26,7 @@ if (isset($_GET['eliminar']) && is_numeric($_GET['eliminar'])) {
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <img src="./Imagenes/Logo Arena 2.png" alt="Logo" width="66" height="80" class="d-inline-block align-text-top">
             </a>
@@ -39,16 +39,13 @@ if (isset($_GET['eliminar']) && is_numeric($_GET['eliminar'])) {
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Registro de Jugadores</a>
+                        <a class="nav-link" href="../torneos.html">Torneos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../crud_php/index.php">Registrate</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="jugadores.php">Jugadores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Registrar Torneo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Torneos</a>
                     </li>
                 </ul>
             </div>
@@ -73,11 +70,10 @@ if (isset($_GET['eliminar']) && is_numeric($_GET['eliminar'])) {
                     <thead class="bg-info">
                         <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">NOMBRE</th>
-                            <th scope="col">APELLIDOS</th>
-                            <th scope="col">CÉDULA</th>
-                            <th scope="col">FECHA DE NACIMIENTO</th>
+                            <th scope="col">USUARIO</th>
                             <th scope="col">CORREO</th>
+                            <th scope="col">PASSWORD</th>
+                            <th scope="col">AVATAR</th>
                             <th scope="col">ACCIONES</th>
                         </tr>
                     </thead>
@@ -87,11 +83,10 @@ if (isset($_GET['eliminar']) && is_numeric($_GET['eliminar'])) {
                         while ($datos = $sql->fetch_object()) { ?>
                             <tr>
                                 <td><?= $datos->id_persona ?></td>
-                                <td><?= $datos->nombre ?></td>
-                                <td><?= $datos->apellido ?></td>
-                                <td><?= $datos->cedula ?></td>
-                                <td><?= $datos->fecha_nac ?></td>
+                                <td><?= $datos->usuario ?></td>
                                 <td><?= $datos->correo ?></td>
+                                <td><?= $datos->password ?></td>
+                                <td><img src="<?= $datos->avatar ?>" alt="Avatar" width="100"></td>
                                 <td>
                                     <a href="modificar_persona.php?id=<?= $datos->id_persona ?>" class="btn btn-small btn-warning"><i class="fas fa-edit"></i></a>
                                     <a onclick="return eliminar()" href="jugadores.php? id=<?= $datos->id_persona ?>" class="btn btn-small btn-danger"><i class="fas fa-trash"></i></a>

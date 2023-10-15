@@ -1,13 +1,11 @@
 <?php
 if (!empty($_GET["id"])) {
     // Obtén el ID de forma segura
-    $id = intval($_GET["id"]);
+    $id = $_GET["id"];
 
     // Prepara la consulta SQL para eliminar la persona
-    $sql = $conexion->prepare("DELETE FROM persona WHERE id_persona = ?");
-    $sql->bind_param("i", $id);
-
-    if ($sql->execute()) {
+    $sql = $conexion->prepare("DELETE FROM persona WHERE id_persona=$id");
+    if ($sql==1) {
         echo '<div class="alert alert-success">Persona eliminada correctamente</div>';
         // Redirigir a la página de jugadores después de eliminar
         header("Location: jugadores.php");

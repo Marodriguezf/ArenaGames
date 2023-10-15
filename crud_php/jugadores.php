@@ -1,13 +1,12 @@
 <?php
+include "modelo/conexion.php";
 // Variable para controlar si se debe mostrar la tabla
 $mostrarTabla = true;
 
 // Verifica si se envió una solicitud de eliminación
-if (isset($_GET['eliminar']) && is_numeric($_GET['eliminar'])) {
-    $idPersonaEliminar = $_GET['eliminar'];
+
     // Incluye el controlador para eliminar la persona
     include "controlador/eliminar_persona.php";
-}
 
 ?>
 <!DOCTYPE html>
@@ -60,9 +59,7 @@ if (isset($_GET['eliminar']) && is_numeric($_GET['eliminar'])) {
         }
     </script>
     <h1>Jugadores Registrados</h1>
-    <?php
-    include "modelo/conexion.php";
-    ?>
+
     <div class="container-fluid">
         <?php if ($mostrarTabla) { ?>
             <div class="col-8 p-4 m-auto">

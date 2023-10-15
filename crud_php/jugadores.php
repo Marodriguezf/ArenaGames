@@ -86,10 +86,11 @@ if (isset($_GET['eliminar']) && is_numeric($_GET['eliminar'])) {
                                 <td><?= $datos->usuario ?></td>
                                 <td><?= $datos->correo ?></td>
                                 <td><?= $datos->password ?></td>
-                                <td><img src="<?= $datos->avatar ?>" alt="Avatar" width="100"></td>
+                                <td><img src="../imagenes/<?= $datos->avatar ?>" alt="Avatar" width="100"></td>
                                 <td>
                                     <a href="modificar_persona.php?id=<?= $datos->id_persona ?>" class="btn btn-small btn-warning"><i class="fas fa-edit"></i></a>
-                                    <a onclick="return eliminar()" href="jugadores.php? id=<?= $datos->id_persona ?>" class="btn btn-small btn-danger"><i class="fas fa-trash"></i></a>
+                                    <a onclick="return eliminar()" href="jugadores.php?id=<?= $datos->id_persona ?>" class="btn btn-small btn-danger"><i class="fas fa-trash"></i></a>
+
                                 </td>
                             </tr>
                         <?php } ?>

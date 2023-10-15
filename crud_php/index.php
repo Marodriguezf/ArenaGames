@@ -56,7 +56,7 @@
     ?>
     <div class="form">
         <?php if ($mostrarFormulario) { ?>
-            <form class="content col-4 p-3 m-auto" method="POST">
+            <form class="content col-4 p-3 m-auto" method="POST" enctype="multipart/form-data">
                 <h1 id="title">Registrate</h1>
                 <div class="mb-3">
                     <label for="usuario" class="form-label">Usuario</label>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="avatar" class="form-label">avatar</label>
-                    <input type="file" class="form-control" name="avatar" accept="image/jpg, image/jpeg, image/png, image/webp">
+                    <input type="file" class="form-control" name="avatar" accept="image/jpg, image/jpeg, image/png, image/webp"  onchange="actualizarimg()">
                 </div>
                 <div class="btn-field">
                     <button type="submit" class="btn btn-primary" name="btnregistrar" value="ok">Registrar</button>

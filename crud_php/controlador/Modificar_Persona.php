@@ -10,7 +10,7 @@ if (isset($_POST["btnregistrar"])) {
         $avatar = null; // Variable para almacenar la ruta del avatar
 
         if (isset($_FILES["avatar"]) && $_FILES["avatar"]["error"] === UPLOAD_ERR_OK) {
-            $uploadDir = "./imagenes/"; // Reemplaza con la ubicación deseada
+            $uploadDir = "../imagenes";
             $uploadPath = $uploadDir . basename($_FILES["avatar"]["name"]);
 
             if (move_uploaded_file($_FILES["avatar"]["tmp_name"], $uploadPath)) {

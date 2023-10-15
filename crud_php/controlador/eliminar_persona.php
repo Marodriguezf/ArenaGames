@@ -9,11 +9,12 @@ if (!empty($_GET["id"])) {
 
     if ($sql->execute()) {
         echo '<div class="alert alert-success">Persona eliminada correctamente</div>';
+        // Redirigir a la página de jugadores después de eliminar
+        header("Location: jugadores.php");
+        exit(); // Asegura que el script se detenga después de la redirección
     } else {
-        echo '<div class="alert alert-danger">Error al eliminar persona: ' . $conexion->error . '</div>';
+        echo '<div class="alert alert-danger">Error al eliminar persona: ' . $sql->error . '</div>';
     }
-} else {
-    echo '<div class="alert alert-warning">ID de persona no proporcionado</div>';
-}
+}    
 
 ?>

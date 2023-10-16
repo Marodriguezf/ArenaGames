@@ -3,8 +3,6 @@ include "modelo/conexion.php";
 // Variable para controlar si se debe mostrar la tabla
 $mostrarTabla = true;
 
-// Verifica si se envió una solicitud de eliminación
-
     // Incluye el controlador para eliminar la persona
     include "controlador/eliminar_persona.php";
 

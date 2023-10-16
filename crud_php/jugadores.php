@@ -5,7 +5,6 @@ $mostrarTabla = true;
 
     // Incluye el controlador para eliminar la persona
     include "controlador/eliminar_persona.php";
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

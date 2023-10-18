@@ -61,28 +61,34 @@ if (isset($_GET["id"])) {
     </nav>
 
     <div class="form">
-        <form class="content col-4 p-3 m-auto" method="POST">
+        <form class="content col-4 p-3 m-auto" method="POST" enctype="multipart/form-data">
             <h3 class="text-center text-secondary">Perfil de usuario</h3>
             <input type="hidden" name="id" value="<?= $_GET["id"] ?>">
             <?php
             include "controlador/Modificar_Persona.php";
             if ($sql && $datos = $sql->fetch_object()) { ?>
                 <div class="mb-3">
-                <label for="usuario" class="form-label">Usuario</label>
-                <input type="text" class="form-control" name="usuario" value="<?= $datos->usuario ?>">
+                    <label for="usuario" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" name="usuario" value="<?= $datos->usuario ?>">
                 </div>
                 <div class="mb-3">
-                <label for="correo" class="form-label">Correo</label>
-                <input type="email" class="form-control" name="correo" value="<?= $datos->correo ?>">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="email" class="form-control" name="correo" value="<?= $datos->correo ?>">
                 </div>
                 <div class="mb-3">
-                <label for="password" class="form-label">password</label>
+                    <label for="password" class="form-label">password</label>
                     <input type="text" class="form-control" name="password" value="<?= $datos->password ?>">
                 </div>
                 <div class="mb-3">
-                <label for="avatar" class="form-label">avatar</label>
-                    <input type="file" class="form-control" name="avatar" value="<?= $datos->avatar ?>">
+                    <label for="avatar" class="form-label">Avatar Actual</label>
+                    <img src="<?= $datos->avatar ?>" alt="Avatar Actual" width="100">
                 </div>
+                <div class="mb-3">
+                    <label for="avatar" class="form-label">Subir nueva imagen de Avatar</label>
+                    <input type="file" class="form-control" name="avatar" accept="image/jpg, image/jpeg, image/png, image/webp">
+                </div>
+                <input type="hidden" name="avatar_actual" value="<?= $datos->avatar ?>">
+
 
             <?php } else {
                 echo "No se encontraron datos para modificar.";

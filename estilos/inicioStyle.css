@@ -270,3 +270,98 @@ article h2 {
     }
     
 }
+
+.card-image{
+    position:relative;
+    height: 150px;
+    width: 150px;
+    
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color:#2B2D34;
+}
+
+.slide-content{
+    margin: 0 40px;
+
+}
+
+.image-content, .card-content{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding:10px 14px;
+
+}
+
+.name{
+    font-size: 18px;
+    font-weight:bolder;
+    color: aliceblue;
+
+}
+
+.description{
+    font-size: 14px;
+    color: #111218;
+    text-align: center;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #840E86;
+    border-radius: 25px 25px 0 25px;
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+   
+}
+.card-content p {
+    color: aliceblue;
+}
+
+.section3 h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    padding: 30px;
+    color: #889BAA;
+}
+
+.section21 h3 {
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    padding: 30px;
+    color: #889BAA;
+
+}
+
+
+.section21 {
+    background-color: #14161D;
+}
+
+.section31 {
+    background-color: #14161D;
+}
+
+.section21, .video{
+   padding: 30px;
+}

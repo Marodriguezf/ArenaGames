@@ -68,7 +68,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">password</label>
-                    <input type="text" class="form-control" name="password">
+                    <input type="password" class="form-control" name="password">
                 </div>
                 <div class="mb-3">
                     <label for="avatar" class="form-label">avatar</label>

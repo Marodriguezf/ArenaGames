@@ -1,6 +1,6 @@
 <?php
 include "modelo/conexion.php";
-
+include "controlador/eliminar_persona.php";
 // Verificar si 'id' está definido en $_GET
 if (isset($_GET["id"])) {
     // Obtener el valor de 'id' 

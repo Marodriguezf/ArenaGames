@@ -79,10 +79,10 @@ if (isset($_GET["id"])) {
                     <label for="password" class="form-label">password</label>
                     <input type="text" class="form-control" name="password" value="<?= $datos->password ?>">
                 </div>
-                <div class="mb-3">
+              <!--   <div class="mb-3">
                     <label for="avatar" class="form-label">Avatar Actual</label>
                     <img src="<?= $datos->avatar ?>" alt="Avatar Actual" width="100">
-                </div>
+                </div>  -->
                 <div class="mb-3">
                     <label for="avatar" class="form-label">Subir nueva imagen de Avatar</label>
                     <input type="file" class="form-control" name="avatar" accept="image/jpg, image/jpeg, image/png, image/webp">
